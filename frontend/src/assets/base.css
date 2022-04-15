@@ -1,0 +1,149 @@
+html
+{
+	/********************/
+	/* Colors definition */
+	/********************/
+	--radiant-pink:	rgb(236, 100, 151);
+	--yellow:	rgb(255, 228, 113);
+	--pastel-purple:	rgb(221, 172, 226);
+	--deep-blue:rgb(23, 61, 199);	
+	--font-blue:	rgb(37, 46, 131);
+	--gray-10:	rgb(229, 229, 229);
+	--gray-10-op:	rgba(229, 229, 229, 0.5);
+	--deep-blue-10:	rgba(23, 61, 199, 0.1);
+	--deep-blue-50:	rgba(23, 61, 199, 0.5);
+	--input-fields:	rgb(229, 229, 229);
+	--nocol:	rgb(229, 229, 229, 0);
+	--white-10:	rgba(255, 255, 255, 0.1);
+	--main-color-1:	 var(--radiant-pink);
+	--main-color-2:	var(--yellow);
+}
+
+@font-face
+{
+	font-family: MyanmarText;
+	src: url('/src/assets/myanmar-text.woff') format('woff');
+	src: url('/src/assets/myanmar-text.ttf') format('truetype');
+}
+
+body
+{
+	background:	linear-gradient(135deg, var(--main-color-1), var(--main-color-2))	fixed;
+	font-family:	MyanmarText;
+	letter-spacing:	2px;
+	color:	white;
+}
+
+header
+{
+	background-image: url("/src/assets/header-id.png");
+	background-repeat:	no-repeat;
+	background-position:	center;
+	margin-top:	1%;
+	min-height:	300px;
+	min-width: 548px;
+	height: 100%;
+	width: 100%;
+}
+
+.app {
+	width: 100;
+	height: 100;
+}
+
+.UserRecap
+{
+	float:	right;
+	width:	25%;
+	min-height:	225px;
+	border:	solid 3px white;
+	border-radius: 5px;
+	margin-bottom:	min(22px);
+}
+
+.SocialRecap
+{
+	float:	right;
+	width:	25%;
+	min-height:	225px;
+	border:	solid 3px white;
+	border-radius: 5px;
+	margin-top:	min(22px);
+}
+
+.ChatArea
+{
+	float:	left;
+	width:	70%;
+	min-height:	500px;
+	border:	solid 3px white;
+	border-radius: 5px;
+}
+
+.ChatToolsSpace
+{
+	float:	right;
+	width:	25%;
+	min-height:	500px;
+	border:	solid 3px white;
+	border-radius: 5px;
+	margin-bottom:	min(22px);
+}
+
+.ChatToolsNav
+{
+	float:	right;
+	width:	25%;
+	min-height:	225px;
+	border:	solid 3px white;
+	border-radius: 5px;
+	margin-bottom:	min(22px);
+}
+
+.winSurface
+{
+	display:	block;
+	margin-top:	1%;
+	margin-left: 160px;
+	margin-right:	auto;
+	margin-bottom:	5%;
+	width:	90%;
+	height:	100%;
+	min-width: 1000px;
+}
+
+.GameArea
+{
+	display:	flex;
+	width:	60% !important;
+	height: auto !important;
+	min-height: 400px;
+	min-width: 700px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	border:	solid 3px white;
+	border-radius: 5px;
+	flex-direction:	column;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: large;
+  scrollbar-color: white transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid white;
+}
