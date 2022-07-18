@@ -17,7 +17,8 @@ $ docker-compose up --build
 ```
 
 ## Preview
-![4](preview.png)
+![4](previews/game.png)
+![5](previews/chat.png)
 
 
 *In collaboration with [abenoit][1], [gmaris][2] and [thsembel][3] 🔥*
